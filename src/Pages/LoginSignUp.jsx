@@ -17,7 +17,7 @@ const LoginSignUp = () => {
   const login = async () => {
     // console.log("Login function executed", formData);
     let responseData;
-    await fetch('https://shopping-gbcp.onrender.com/login',
+    await fetch('https://shopping-yc6u.onrender.com/login',
     {
       method: 'POST',
       headers: {
@@ -38,7 +38,7 @@ const LoginSignUp = () => {
   const signup = async () => {
     // console.log("Signup function executed", formData);
     let responseData;
-    await fetch('https://shopping-gbcp.onrender.com/signup',
+    await fetch('https://shopping-yc6u.onrender.com/signup',
     {
       method: 'POST',
       headers: {

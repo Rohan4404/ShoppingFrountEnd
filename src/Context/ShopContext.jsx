@@ -18,12 +18,12 @@
 //     const [cartItems, setCartItems] = useState(getDefaultCart());
 
 //     useEffect(()=>{
-//         fetch('https://shopping-gbcp.onrender.com/allproducts')
+//         fetch('https://shopping-yc6u.onrender.com/allproducts')
 //         .then((response)=>response.json())
 //         .then((data)=>setAll_Product(data))
 
 //         if(localStorage.getItem('auth-token')) {
-//             fetch('https://shopping-gbcp.onrender.com/getcart', {
+//             fetch('https://shopping-yc6u.onrender.com/getcart', {
 //                 method: 'POST',
 //                 headers: {
 //                     'Accept': 'application/formData,',
@@ -44,7 +44,7 @@
 //         }));
 //         // Log the cart items after updating
 //         if(localStorage.getItem('auth-token')) {
-//             fetch('https://shopping-gbcp.onrender.com/addtocart', {
+//             fetch('https://shopping-yc6u.onrender.com/addtocart', {
 //                 method: 'POST',
 //                 headers: {
 //                     'Accept': 'application/formData,',
@@ -66,7 +66,7 @@
 //             [itemId]: prev[itemId] - 1,  // Use [itemId] instead of itemId
 //         }));
 //         if(localStorage.getItem('auth-token')) {
-//             fetch('https://shopping-gbcp.onrender.com/removefromcart', {
+//             fetch('https://shopping-yc6u.onrender.com/removefromcart', {
 //                 method: 'POST',
 //                 headers: {
 //                     'Accept': 'application/formData,',
@@ -109,7 +109,7 @@
 //         return totalItems;
 //     };
 
-    
+
 
 //     const contextValue = { all_product, cartItems, addToCart, removeFromCart, getTotalCartAmount ,getTotalCartItems};
 
@@ -138,12 +138,12 @@ const ShopContextProvider = (props) => {
     const [cartItems, setCartItems] = useState(getDefaultCart());
 
     useEffect(() => {
-        fetch('https://shopping-gbcp.onrender.com/allproducts')
+        fetch('https://shopping-yc6u.onrender.com/allproducts')
         .then((response) => response.json())
         .then((data) => setAll_Product(data));
     
         if (localStorage.getItem('auth-token')) {
-            fetch('https://shopping-gbcp.onrender.com/getcart', {
+            fetch('https://shopping-yc6u.onrender.com/getcart', {
                 method: 'POST',
                 headers: {
                     Accept: 'application/formData',
@@ -167,7 +167,7 @@ const ShopContextProvider = (props) => {
             [itemId]: prev[itemId] + 1,
         }));
         if (localStorage.getItem('auth-token')) {
-            fetch('https://shopping-gbcp.onrender.com/addtocart', {
+            fetch('https://shopping-yc6u.onrender.com/addtocart', {
                 method: 'POST',
                 headers: {
                     Accept: 'application/formData',
@@ -186,7 +186,7 @@ const ShopContextProvider = (props) => {
             [itemId]: prev[itemId] - 1,
         }));
         if (localStorage.getItem('auth-token')) {
-            fetch('https://shopping-gbcp.onrender.com/removefromcart', {
+            fetch('https://shopping-yc6u.onrender.com/removefromcart', {
                 method: 'POST',
                 headers: {
                     Accept: 'application/formData',
